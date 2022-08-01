@@ -1,4 +1,4 @@
-// pages/index/index.js
+// pages/search/search.js
 Page({
 
   /**
@@ -8,11 +8,12 @@ Page({
 
   },
 
-  // 跳转到搜索页面
-  search: function () {
+  // 取消搜索,返回主页面
+  hideInput: function () {
     wx.navigateTo({
-      url: '../search/search'
-    })
+    //跳转，返回主页面路径
+          url: '../index/index'   
+        })
   },
 
   /**

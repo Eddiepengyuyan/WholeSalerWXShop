@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/test/test",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/test/test",
+    "pages/logs/logs",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "雅迪家批发",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

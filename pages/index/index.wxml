@@ -1,23 +1,36 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
+<!--pages/index/index.wxml-->
+<!-- <view style="height: 150rpx;"></view> -->
+
+<scroll-view scroll-y="false"  bindscroll="scroll" style="height:100%;">
+  <!--这一部分设置悬浮-->
+    <view class="page-group {{scrollTop > 0 ? 'page-group-position' : ''}}">
+      <view class="header ">
+          <view class="logo">
+              <open-data type="userAvatarUrl"></open-data>
+          </view>
+          
+              <view class="user-info">
+                  <view class="user-name">我是导航条呀</view>
+              </view>
+          <view class="h-right-btn" catchtap="goNews">
+              <text>悬浮~~</text>
+              <image src="/assets/images/icon_arrow_001.png"></image>
+          </view>
       </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+     </view>
+</scroll-view>
+
+
+<view class="search"></view>
+<view class='page_row' bindtap="search">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size='16' type='search'></icon>
+      <input class="sousuo" disabled placeholder="搜索"/>
+    </view>
   </view>
 </view>
+<!-- <view class="header">
+  <text>首页</text>
+</view> -->
+

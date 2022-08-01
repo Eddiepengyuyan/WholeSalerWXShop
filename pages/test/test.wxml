@@ -2,4 +2,12 @@
 <text>pages/test/test.wxml</text>
 <view wx:for="{{itemsList}}" wx:key="itemid">
   <text>{{item.name}}</text>
+
+
+</view>
+<view>
+  <!-- <image src="http://localhost:8080/images/maotai.png"></image> -->
+  <image src="{{photoold}}"></image>
+  <button bindtap="chooseImage" size="mini" type="primary">选择图片</button>
+  <button bindtap="uploadImage" size="mini"type="primary" >上传图片</button>
 </view>
