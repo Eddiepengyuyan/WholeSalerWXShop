@@ -1,10 +1,17 @@
 /* pages/index/index.wxss */
+.searchcontainer{
+  background-color: #927000;
+  height: 100rpx;
+
+}
+
 .search{
   width: 98%;
 }
 .search_arr {
   border: 1px solid #d0d0d0;
-  border-radius: 10rpx;
+  background-color: #efefef;
+  border-radius: 50rpx;
   margin-left: 20rpx;
 }
 .search_arr input{
@@ -20,7 +27,12 @@
 }
 .page_row{
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  height: 100rpx;
+  background-color: #A40A3C;
+  border-radius: 0rpx 0rpx 75rpx 75rpx;
+  /* padding: 50rpx 0rpx 50rpx 0 rpx; */
+  /* margin: 50rpx 0rpx 50rpx 0rpx; */
 }
 .searchcion {
   margin: 10rpx 10rpx 10rpx 10rpx;
@@ -42,4 +54,9 @@
 
 .header text{
   font-size: 60rpx;
+}
+
+.scrollcontainer{
+	display: flex;
+	
 }

@@ -1,4 +1,4 @@
-// pages/index/index.js
+// pages/order/order.js
 Page({
 
   /**
@@ -6,13 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  // 跳转到搜索页面
-  search: function () {
-    wx.navigateTo({
-      url: '../search/search'
-    })
   },
 
   /**

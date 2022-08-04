@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/order/order",
     "pages/test/test",
     "pages/logs/logs",
     "pages/search/search"
@@ -10,6 +11,18 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "雅迪家批发",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+	  "list":[
+		  {
+        "pagePath":"pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath":"pages/order/order",
+        "text": "订单"
+      }
+	  ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

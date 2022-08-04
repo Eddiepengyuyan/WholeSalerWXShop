@@ -1,0 +1,36 @@
+<!--pages/order/order.wxml-->
+<view>
+  <text>订单</text>
+  <view class="scrollcontainer">
+  <!-- 左侧滚动区域 -->
+    <scroll-view scroll-y style="height: 300rpx;">
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+    </scroll-view>
+    <!-- 右侧滚动区域 -->
+    <scroll-view scroll-y style="height: 300rpx;">
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+  </scroll-view>
+  </view>
+</view>

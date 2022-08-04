@@ -1,9 +1,9 @@
 <!--pages/index/index.wxml-->
 <!-- <view style="height: 150rpx;"></view> -->
 
-<scroll-view scroll-y="false"  bindscroll="scroll" style="height:100%;">
+<!-- <scroll-view scroll-y="false"  bindscroll="scroll" style="height:100%;"> -->
   <!--这一部分设置悬浮-->
-    <view class="page-group {{scrollTop > 0 ? 'page-group-position' : ''}}">
+    <!-- <view class="page-group {{scrollTop > 0 ? 'page-group-position' : ''}}">
       <view class="header ">
           <view class="logo">
               <open-data type="userAvatarUrl"></open-data>
@@ -13,23 +13,70 @@
                   <view class="user-name">我是导航条呀</view>
               </view>
           <view class="h-right-btn" catchtap="goNews">
-              <text>悬浮~~</text>
-              <image src="/assets/images/icon_arrow_001.png"></image>
-          </view>
+              <text>悬浮~~</text> -->
+              <!-- <image src="/assets/images/icon_arrow_001.png"></image> -->
+          <!-- </view>
       </view>
      </view>
-</scroll-view>
+</scroll-view> -->
 
 
-<view class="search"></view>
-<view class='page_row' bindtap="search">
-  <view class="search">
-    <view class="df search_arr">
-      <icon class="searchcion" size='16' type='search'></icon>
-      <input class="sousuo" disabled placeholder="搜索"/>
+<view class="searchcontainer">
+  <view class='page_row' bindtap="search">
+    <view class="search">
+      <view class="df search_arr">
+       <icon class="searchcion" size='16' type='search'></icon>
+       <input class="sousuo" disabled placeholder="搜索"/>
+      </view>
     </view>
   </view>
 </view>
+
+
+<view class="scrollcontainer">
+  <!-- 左侧滚动区域 -->
+    <scroll-view scroll-y style="height:1000rpx;width: 100px;">
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+		<view>11111</view>
+    </scroll-view>
+    <!-- 右侧滚动区域 -->
+    <scroll-view scroll-y style="height: 300rpx;">
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+		<view>22222</view>
+  </scroll-view>
+  </view>
 <!-- <view class="header">
   <text>首页</text>
 </view> -->
