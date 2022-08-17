@@ -1,0 +1,67 @@
+<!--pages/gouwuche/gouwuche.wxml-->
+<view style="height:100%;position:fixed;width:100%;">
+  <scroll-view scroll-y="false"  bindscroll="scroll" style="height:100%;">
+  <!--这一部分设置悬浮-->
+    <view class="page-group-position {{scrollTop > 0 ? 'page-group-position' : ''}}">
+      <view class="header ">
+          <!-- <view class="logo">
+              <open-data type="userAvatarUrl"></open-data>
+          </view> -->
+          
+          <view class="user-info">
+              <view class="user-name">我是导航条呀</view>
+          </view>
+          <view class="h-right-btn" catchtap="goNews">
+              <text>悬浮~~</text>
+              <!-- <image src="/assets/images/icon_arrow_001.png"></image> -->
+          </view>
+      </view>
+      </view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+      <view>tianchong</view>
+
+  </scroll-view>
+</view>

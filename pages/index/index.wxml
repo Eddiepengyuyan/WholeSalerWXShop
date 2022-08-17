@@ -20,64 +20,62 @@
      </view>
 </scroll-view> -->
 
-
-<view class="searchcontainer">
-  <view class='page_row' bindtap="search">
-    <view class="search">
-      <view class="df search_arr">
-       <icon class="searchcion" size='16' type='search'></icon>
-       <input class="sousuo" disabled placeholder="搜索"/>
+<view>
+  <view class="searchcontainer">
+    <view class='page_row' bindtap="search">
+      <view class="search">
+        <view class="df search_arr">
+        <icon class="searchicon" size='16' type='search'></icon>
+        <input class="sousuo" disabled placeholder="搜索"/>
+        </view>
       </view>
     </view>
   </view>
-</view>
 
-
-<view class="scrollcontainer">
-  <!-- 左侧滚动区域 -->
-    <scroll-view scroll-y style="height:1000rpx;width: 100px;">
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
-		<view>11111</view>
+  <view class="scrollcontainer" style="height: {{2*height}}rpx;">
+    <!-- 左侧滚动区域 -->
+    <scroll-view scroll-y style="height:100%;width: 200rpx;">
+      <view>11111</view>
+      <view>11111</view>
+      <view>11111</view>
+      <view>11111</view>
+      <view>11111</view>
+      <view>11111</view>
     </scroll-view>
-    <!-- 右侧滚动区域 -->
-    <scroll-view scroll-y style="height: 300rpx;">
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-		<view>22222</view>
-  </scroll-view>
+      <!-- 右侧滚动区域 -->
+    <scroll-view scroll-y style="height: 100%;">
+      <!-- scroll的items -->
+      <view class="itemScrollItem" wx:for="[1,2,3]" wx:key="itemid" bindtap="showModal">
+        <image src="/static/img/kekoukele.png" style="height: 100rpx;width: 100rpx;"/>
+        <view class="scrollItemText">
+          <text class="itemName" style="font-size: 45rpx;margin-top: 10rpx;height: 120rpx;">namenamenamenamenamenamenamenamenamename</text>
+          <!-- <text style="font-size: 30rpx;color: #aaaaaa;">sale</text> -->
+          <text style="font-size: 40rpx;color: brown;">￥12.5</text>
+        </view>
+        <view style="">
+          <icon type="circle"></icon>
+        </view>
+      </view>
+      <!-- modal  -->
+      <view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
+        <view class="modal-cancel" bindtap="hideModal"></view>
+        <view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
+          <!--  -->
+          <view class='Mselect'>
+            <view>aaaaaaa</view>
+            <view>aaaaaaa</view>
+            <view>aaaaaaa</view>
+            <view>aaaaaaa</view>
+            <view>aaaaaaa</view>
+            <view>aaaaaaa</view>
+          </view>
+          <view></view>
+          <view class='Mcancel' bindtap='mCancel'>
+            <text>取消</text>
+          </view>
+          <!--  -->
+        </view>
+      </view>
+    </scroll-view>
   </view>
-<!-- <view class="header">
-  <text>首页</text>
-</view> -->
-
+</view>

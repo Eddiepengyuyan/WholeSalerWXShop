@@ -1,10 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/order/order",
     "pages/test/test",
+    "pages/order/order",
     "pages/logs/logs",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/personal/personal",
+    "pages/gouwuche/gouwuche"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,18 +14,32 @@
     "navigationBarTitleText": "雅迪家批发",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-	  "list":[
-		  {
-        "pagePath":"pages/index/index",
-        "text": "首页"
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#A40A3C",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar_icon/jiu.png",
+        "selectedIconPath": "static/tabbar_selected_icon/jiu.png"
       },
       {
-        "pagePath":"pages/order/order",
-        "text": "订单"
+        "pagePath": "pages/gouwuche/gouwuche",
+        "text": "购物车",
+        "iconPath": "static/tabbar_icon/gouwuche.png",
+        "selectedIconPath": "/static/tabbar_selected_icon/gouwuche.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "/static/tabbar_icon/gerenzhongxin.png",
+        "selectedIconPath": "/static/tabbar_selected_icon/gerenzhongxin.png"
       }
-	  ]
+    ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

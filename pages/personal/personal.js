@@ -1,4 +1,4 @@
-// pages/search/search.js
+// pages/personal/personal.js
 Page({
 
   /**
@@ -6,17 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  // 取消搜索,返回主页面
-  hideInput: function () {
-    wx.switchTab({
-      url: '../index/index',
-    })
-    // wx.navigateTo({
-    // //跳转，返回主页面路径
-    //       url: '/pages/index/index'   
-    //     })
   },
 
   /**

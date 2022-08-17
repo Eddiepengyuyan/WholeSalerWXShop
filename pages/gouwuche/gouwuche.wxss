@@ -1,0 +1,19 @@
+/* pages/gouwuche/gouwuche.wxss */
+
+.page-group{
+  display: table;
+  border: solid;
+  /* background-color: blueviolet; */
+  width: 100%;
+  table-layout: fixed;
+  position: fixed;
+  /* top: 0; */
+  bottom: 0;
+  left: 0;
+  z-index: 999;/*这个设置在原生组件中用于置顶导航条*/
+}
+.page-group-position{
+  position: fixed;
+  bottom: 0;
+  background-color:#fff
+}

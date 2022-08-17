@@ -34,7 +34,7 @@
   /* padding: 50rpx 0rpx 50rpx 0 rpx; */
   /* margin: 50rpx 0rpx 50rpx 0rpx; */
 }
-.searchcion {
+.searchicon {
   margin: 10rpx 10rpx 10rpx 10rpx;
   position: absolute;
   margin-left:38%;
@@ -57,6 +57,41 @@
 }
 
 .scrollcontainer{
-	display: flex;
+  display: flex;
+  background-color: #efefef;
 	
+}
+
+.itemScrollItem{
+  display: flex;
+  /* border: solid; */
+  background-color: white;
+  height: 200rpx;
+  margin-bottom: 10rpx;
+  margin-right: 10rpx;
+  /* padding: 20rpx; */
+}
+
+.itemScrollItem image{
+  display: flex;
+  position: relative;
+  align-self: center;
+  margin: 20rpx;
+}
+
+.itemScrollItem .scrollItemText{
+  display: flex;
+  flex-direction: column;
+  width: 300rpx;
+}
+
+.itemScrollItem .scrollItemText .itemName{
+  display: -webkit-box;
+  font-size: 40rpx;
+  margin-top: 10rpx;
+  height: 120rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

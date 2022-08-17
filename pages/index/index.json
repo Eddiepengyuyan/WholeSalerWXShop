@@ -3,7 +3,7 @@
   "navigationBarBackgroundColor": "#A40A3C",
   "navigationBarTextStyle": "white",
   "enablePullDownRefresh": true,
-  "backgroundColor": "#efefef",
+  "backgroundColor": "#A40A3C",
   "backgroundTextStyle": "light",
   "usingComponents": {
   }

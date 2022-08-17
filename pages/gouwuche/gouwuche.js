@@ -1,22 +1,11 @@
-// pages/search/search.js
+// pages/gouwuche/gouwuche.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  // 取消搜索,返回主页面
-  hideInput: function () {
-    wx.switchTab({
-      url: '../index/index',
-    })
-    // wx.navigateTo({
-    // //跳转，返回主页面路径
-    //       url: '/pages/index/index'   
-    //     })
+    scrollTop:null
   },
 
   /**
@@ -24,6 +13,10 @@ Page({
    */
   onLoad(options) {
 
+  },
+  
+  scroll: function (e) {
+    this.setData({ scrollTop: e.detail.scrollTop })
   },
 
   /**
@@ -58,7 +51,9 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    wx.stopPullDownRefresh({
+      success: (res) => {},
+    })
   },
 
   /**
